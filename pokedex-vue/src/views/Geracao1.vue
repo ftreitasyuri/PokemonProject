@@ -26,9 +26,10 @@ onMounted(async () => {
   <main class="container ">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="v in vetor">
-        <div class="card">
+        <div class="card" :class="v.types[0].type.name">
           <img :src="v.sprites.other.home.front_default" alt="Imagem do pokemon">
-          <p>{{ v.name }}</p>
+          <p>Name: {{ v.name }}</p>
+          <p>First Type: {{ v.types[0].type.name }}</p>
         </div>
       </div>
     </div> 

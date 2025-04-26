@@ -5,6 +5,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+import './complementos/estilos.css';
+
 // Importar componentes
 import Navegacao from './componentes/BarraNavegacao.vue';
 
