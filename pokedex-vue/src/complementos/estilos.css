@@ -13,6 +13,9 @@
     transition: transform 0.5s;
 }
 
+.carregamento{
+    text-align: center;
+}
 
 /* cores referentes ao tipo de cada pokemon */
 .grass{

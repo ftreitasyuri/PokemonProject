@@ -4,6 +4,8 @@ import { onMounted, ref } from "vue";
 // Vetores
 let vetor = ref([]);
 
+let carregamento = ref(true);
+
 onMounted(async () => {
 
   for (let indice = 1; indice <= 151; indice++) {
@@ -11,6 +13,9 @@ onMounted(async () => {
     let pokemon = await requisicao.json();
     vetor.value.push(pokemon);
   }
+
+  carregamento.value = false;
+
 });
 </script>
 
@@ -23,7 +28,11 @@ onMounted(async () => {
     </li>
   </ul> -->
 
-  <main class="container ">
+  <div class="carregamento" v-if="carregamento">
+    <img src="../complementos/carregamento.gif" alt="">
+  </div>
+
+  <main class="container " v-if="!carregamento">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="v in vetor">
         <div class="card" :class="v.types[0].type.name">
