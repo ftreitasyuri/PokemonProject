@@ -17,6 +17,11 @@
     text-align: center;
 }
 
+
+.pesquisa{
+    margin: 20px;
+}
+
 /* cores referentes ao tipo de cada pokemon */
 .grass{
     background-color: rgb(92, 184, 92) !important;
