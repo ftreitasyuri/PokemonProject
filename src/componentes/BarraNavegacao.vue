@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <RouterLink class="nav-link" to="/">Primeira Geracação</RouterLink>
+                        <RouterLink class="nav-link" to="/">Primeira Geração</RouterLink>
                     </li>
                     <li class="nav-item">
                         <RouterLink class="nav-link" to="/geracao2">Segunda Geração</RouterLink>
